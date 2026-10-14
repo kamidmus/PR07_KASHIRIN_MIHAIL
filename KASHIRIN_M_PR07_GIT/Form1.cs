@@ -16,5 +16,25 @@ namespace KASHIRIN_M_PR07_GIT
         {
             InitializeComponent();
         }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            ;
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtLogin.Text) ||
+        string.IsNullOrWhiteSpace(txtPassword.Text))
+            {
+                MessageBox.Show("Введите логин и пароль", "Ошибка",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            AdminForm adminForm = new AdminForm();
+            adminForm.Show();
+            this.Hide();
+        }
     }
 }
