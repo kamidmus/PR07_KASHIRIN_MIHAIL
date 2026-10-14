@@ -33,6 +33,7 @@
             this.lblDateTime = new System.Windows.Forms.Label();
             this.lblRole = new System.Windows.Forms.Label();
             this.timerClock = new System.Windows.Forms.Timer(this.components);
+            this.btnShowFio = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,7 +50,7 @@
             // lblDateTime
             // 
             this.lblDateTime.AutoSize = true;
-            this.lblDateTime.Location = new System.Drawing.Point(391, 53);
+            this.lblDateTime.Location = new System.Drawing.Point(661, 74);
             this.lblDateTime.Name = "lblDateTime";
             this.lblDateTime.Size = new System.Drawing.Size(100, 24);
             this.lblDateTime.TabIndex = 1;
@@ -58,7 +59,7 @@
             // lblRole
             // 
             this.lblRole.AutoSize = true;
-            this.lblRole.Location = new System.Drawing.Point(391, 189);
+            this.lblRole.Location = new System.Drawing.Point(632, 189);
             this.lblRole.Name = "lblRole";
             this.lblRole.Size = new System.Drawing.Size(154, 24);
             this.lblRole.TabIndex = 2;
@@ -70,11 +71,22 @@
             this.timerClock.Interval = 1000;
             this.timerClock.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // btnShowFio
+            // 
+            this.btnShowFio.Location = new System.Drawing.Point(581, 274);
+            this.btnShowFio.Name = "btnShowFio";
+            this.btnShowFio.Size = new System.Drawing.Size(250, 40);
+            this.btnShowFio.TabIndex = 3;
+            this.btnShowFio.Text = "Показать ФИО";
+            this.btnShowFio.UseVisualStyleBackColor = true;
+            this.btnShowFio.Click += new System.EventHandler(this.btnShowFio_Click);
+            // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1437, 1036);
+            this.Controls.Add(this.btnShowFio);
             this.Controls.Add(this.lblRole);
             this.Controls.Add(this.lblDateTime);
             this.Controls.Add(this.pictureBox1);
@@ -96,5 +108,6 @@
         private System.Windows.Forms.Label lblDateTime;
         private System.Windows.Forms.Label lblRole;
         private System.Windows.Forms.Timer timerClock;
+        private System.Windows.Forms.Button btnShowFio;
     }
 }

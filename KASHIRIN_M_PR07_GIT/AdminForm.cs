@@ -31,5 +31,11 @@ namespace KASHIRIN_M_PR07_GIT
             InitializeComponent();
             lblDateTime.Text = DateTime.Now.ToString("dd.MM.yyyy HH:mm:ss");
         }
+
+        private void btnShowFio_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Каширин Михаил Дмитриевич", "ФИО",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
