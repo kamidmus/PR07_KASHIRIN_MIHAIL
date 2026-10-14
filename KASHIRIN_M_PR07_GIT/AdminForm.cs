@@ -16,5 +16,20 @@ namespace KASHIRIN_M_PR07_GIT
         {
             InitializeComponent();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblDateTime.Text = DateTime.Now.ToString("dd.MM.yyyy HH:mm:ss");
+        }
+
+        private void AdminForm_Load(object sender, EventArgs e)
+        {
+            ;
+        }
+        public AdminForm()
+        {
+            InitializeComponent();
+            lblDateTime.Text = DateTime.Now.ToString("dd.MM.yyyy HH:mm:ss");
+        }
     }
 }
