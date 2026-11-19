@@ -1,6 +1,6 @@
 # Программа по отмыву денег :trollface:
 ---
-!(https://github.com/user-attachments/assets/6b71971d-5380-467a-9589-add5bff59168 "жизнь свинки")
+!(images (2).jfif "жизнь свинки")
 
 ## Описание программы
 ---
